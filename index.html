@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crack</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1>Crack the code</h1>
+	Code:<input type="text" name="num1" id="num1">
+	<input type="text" name="num2" id="num2">
+	<input type="text" name="num3" id="num3"><br>
+	<input type="button" name="btn" id="btn" value="Try Code" onclick="crack()"><br><br>
+	<div id="output"></div>
+
+<script type="text/javascript">
+	var output = document.getElementById("output");
+	var num1 = document.getElementById("num1");
+	var num2 = document.getElementById("num2");
+	var num3 = document.getElementById("num3");
+	var count = 0;
+	var cCode = [];
+
+	for(var x = 0; x < 3; x++) {
+		var randomNum = Math.floor(Math.random() * 9);
+		cCode.push(randomNum);
+	}
+
+	function crack() {
+		var guess = [num1.value, num2.value, num3.value];
+		for(var x = 0; x < cCode.length; x++) {
+			
+		}
+	}
+
+	output.innerHTML = cCode;
+</script>
+</body>
+</html>
